@@ -471,7 +471,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="اارسل فالخاص للحصول علي اوامر الحماية,
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -479,7 +479,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="اوامر الحماية",
                             callback_data="help_back",
                         )
                     ],
