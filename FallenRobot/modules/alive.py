@@ -7,7 +7,7 @@ from telethon import __version__ as tlhver
 from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot
 
 
-@pbot.on_message(filters.command("alive"))
+@pbot.on_message(filters.command("alive","فحص"))
 async def awake(_, message: Message):
     TEXT = f"**ʜᴇʏ {message.from_user.mention},\n\nɪ ᴀᴍ {BOT_NAME}**\n━━━━━━━━━━━━━━━━━━━\n\n"
     TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [: 𝗥͜𝗼͡𝗪͡𝗲͜𝗦 💸⤸](tg://user?id={OWNER_ID})\n\n"
@@ -16,8 +16,8 @@ async def awake(_, message: Message):
     TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
     BUTTON = [
         [
-            InlineKeyboardButton("ʜᴇʟᴘ", url=f"https://t.me/{BOT_USERNAME}?start=help"),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton("HelP", url=f"https://t.me/{BOT_USERNAME}?start=help"),
+            InlineKeyboardButton("SuppoRt", url=f"https://t.me/{SUPPORT_CHAT}"),
         ]
     ]
     await message.reply_photo(
