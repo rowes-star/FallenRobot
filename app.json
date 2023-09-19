@@ -33,10 +33,10 @@
         "value": "",
         "required": true
       },
-      "MONGO_DB_URI": {
-      "description": "Get this value from cloud.mongodb.com",
+      "MUST_JOIN": {
+      "description": "Your channel",
       "required": true,
-      "value": ""
+      "value": "R7_QX"
       },
       "MONGO_DB_URI": {
         "description": "Get this value from cloud.mongodb.com",
