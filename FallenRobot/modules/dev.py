@@ -81,7 +81,7 @@ def restart(update: Update, context: CallbackContext):
     os.execv("start.bat", sys.argv)
 
 
-LEAVE_HANDLER = CommandHandler("leave", leave)
+LEAVE_HANDLER = CommandHandler("leave","غادر", leave)
 GITPULL_HANDLER = CommandHandler("gitpull", gitpull)
 RESTART_HANDLER = CommandHandler("reboot", restart)
 ALLOWGROUPS_HANDLER = CommandHandler("lockdown", allow_groups)
